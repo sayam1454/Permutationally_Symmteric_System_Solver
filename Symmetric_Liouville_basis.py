@@ -30,11 +30,3 @@ class SymmetricLiouvilleQutritBasis:
             else:
                 mat = np.array(state).reshape(self.q, self.q)
                 print(f"{i}:\n{mat}\n")
-
-
-basis = SymmetricLiouvilleQutritBasis(N=2)
-print(f"Reduced Liouville space dimension for N={basis.N}: {basis.dim()}")
-basis.show_basis(compact=True)
-basis.get_index((1, 1, 0, 0, 0, 0, 0, 0, 0))  
-
-
